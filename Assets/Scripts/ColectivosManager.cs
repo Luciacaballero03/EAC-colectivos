@@ -69,7 +69,7 @@ public class ColectivosManager : MonoBehaviour
     private void ActivarColectivosConMenosDeMedioTanque()
     {
         for (int i=0; i < colectivos.Length; i++){
-            if (colectivos[i].capacidadTanque < (colectivos[i].capacidadTanque*0.5f)){
+            if (colectivos[i].cargaActual < (colectivos[i].capacidadTanque*0.5f)){
                 colectivos[i].gameObject.SetActive(true);
             }
             else{
